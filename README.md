@@ -57,7 +57,9 @@ This interpreter can be expanded with additional syntaxes, but expected that the
   </table>
   
   ## HowTo
+  Compilation: <pre> <code> gcc VaginaFuck.cpp -o VaginaFuck </code> </pre>
   Usage: <pre> <code> ./VaginaFuck filename.bf </code> </pre>
+  
   
   ## Credits
   All of the source code and other texts here are came from different sources, hence I will give the proper credits to the following:
