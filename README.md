@@ -1,5 +1,5 @@
 # VaginaFuck | An Enhanced Brainfuck Esoteric Programming Language
-VaginaFuck is an interpreter written in c++ consisting of 9 operations (as for now), adopting some of the features of c++, notably the fstream file handling that supports only write mode. This project’s goal is to create a program with ease.
+VaginaFuck is an interpreter written in c++ consisting of 10 operations (as for now), adopting some of the features of c++, notably the fstream file handling that supports only write mode. This project’s goal is to add more syntaxes but lesser line or column code so that you can create a program with ease.
 
 This interpreter can be expanded with additional syntaxes, but expected that the development will be slow.
 
@@ -28,6 +28,11 @@ This interpreter can be expanded with additional syntaxes, but expected that the
     <td> - </td>
     <td> decrement the byte at the data pointer. </td>
     <td> Decrease the value of the current cell by 1 </td>
+  </tr>
+  <tr>
+    <td> * </td>
+    <td> Multiply the byte at the data pointer </td>
+    <td> Multiply the value of the current cell by 2. <b> (At this moment, I can't explain how it really works so I will release an example and a short documentation about this by later.) </b> </td>
   </tr>
   <tr>
     <td> . </td>
