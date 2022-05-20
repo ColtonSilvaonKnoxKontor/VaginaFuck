@@ -65,6 +65,11 @@ void interpretCode(const std::string& commands)
             (*dataPtr) -= 1;
             break;
         }
+        case '*':
+        {
+	        (*dataPtr) *= 2;
+	        break;
+        }
         case '.':
         {
             std::cout << char(*dataPtr);
