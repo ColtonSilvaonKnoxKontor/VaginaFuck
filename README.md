@@ -65,6 +65,10 @@ This interpreter can be expanded with additional syntaxes, but expected that the
   Compilation: <pre> <code> gcc VaginaFuck.cpp -o VaginaFuck </code> </pre>
   Usage: <pre> <code> ./VaginaFuck filename.bf </code> </pre>
   
+  You can download a binary executable file at the right, in the <b> Release </b>section.
+  
+  ## About this Maintainer
+  I, the maintainer of this interpreter forked from the source below is not a professional programmer, so I cannot address some of the complicated concepts or ideas of this project.
   
   ## Credits
   All of the source code and other texts here are came from different sources, hence I will give the proper credits to the following:
