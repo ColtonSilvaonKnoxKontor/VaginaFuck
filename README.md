@@ -63,7 +63,7 @@ This interpreter can be expanded with additional syntaxes, but expected that the
   
   ## HowTo
   Compilation: <pre> <code> gcc VaginaFuck.cpp -o VaginaFuck </code> </pre>
-  Usage: <pre> <code> ./VaginaFuck filename.bf </code> </pre>
+  Usage: <pre> <code> ./VaginaFuck-1.x filename.bf </code> </pre>
   
   You can download a binary executable file at the right, in the <b> Release </b>section.
   
