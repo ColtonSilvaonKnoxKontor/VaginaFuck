@@ -4,6 +4,7 @@
 ###################################################################
 */
 
+#include <locale>
 #include <stdexcept>
 #include <iostream>
 #include <fstream>
@@ -28,6 +29,15 @@ std::string inputFile(const std::string& filename)
 
 void interpretCode(const std::string& commands)
 {
+    std::locale::global(std::locale(""));
+
+    std::cin.imbue(std::locale());
+    std::cout.imbue(std::locale());
+    std::cerr.imbue(std::locale());
+    std::wcin.imbue(std::locale());
+    std::wcout.imbue(std::locale());
+    std::wcerr.imbue(std::locale());
+
     std::ofstream outfile;
     outfile.open("out.vfto");
     
@@ -72,7 +82,7 @@ void interpretCode(const std::string& commands)
         }
         case '.':
         {
-            std::cout << char(*dataPtr);
+            std::wcout << wchar_t(*dataPtr);
             break;
         }
         case '@':
@@ -139,7 +149,7 @@ int main(int argc, char* argv[])
 {
     if (argc != 2)
     {
-        std::cout << "VaginaFuck Interpreter 1.0" << std::endl;
+        std::cout << "VaginaFuck Interpreter 2.0" << std::endl;
         std::cout << " " << std::endl;
         std::cout << "Usage: ./VaginaFuck filename.bf" << std::endl;
         return 1;
