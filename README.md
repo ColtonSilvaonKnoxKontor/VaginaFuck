@@ -1,6 +1,8 @@
 # VaginaFuck | An Enhanced Brainfuck Esoteric Programming Language
 VaginaFuck is an interpreter written in c++ consisting of 10 operations (as for now), adopting some of the features of c++, notably the fstream file handling that supports only write mode. This project’s goal is to add more syntaxes so that you can create a program with ease.
 
+<b> <i>VaginaFuck </i> NOW SUPPORTS UNICODE! </b>
+
 This interpreter can be expanded with additional syntaxes, but expected that the development will be slow.
 
 <table>
@@ -32,17 +34,17 @@ This interpreter can be expanded with additional syntaxes, but expected that the
   <tr>
     <td> * </td>
     <td> Multiply the byte at the data pointer </td>
-    <td> Multiply the value of the current cell by 2.</td>
+    <td> Multiply the value of the current cell by 2, this is useful for mapping larger values in unicode. <b> "But still the multiplier is unchanged so I will decide if what value should I assign to * syntax so that the coding line will be shorter but can map the unicode easier" </b> </td>
   </tr>
   <tr>
     <td> . </td>
-    <td> output a character, the ASCII value of which being the byte at the data pointer. </td>
-    <td> Write the ASCII character of the current cell on screen / to file </td>
+    <td> output a character, the character value of which being the byte at the data pointer. </td>
+    <td> Write the character of the current cell on screen / to file </td>
   </tr>
   <tr>
     <td> @ </td>
     <td> output a character; but this time, it generates the “out.vfto” file (extension name “vrto” means VaginalFuckTextOutput) and it writes the character. </td>
-    <td> Write the ASCII character of the current cell directly on the provided file </td>
+    <td> Write the character of the current cell directly on the provided file </td>
   </tr>
   <tr>
     <td> , </td>
@@ -61,11 +63,13 @@ This interpreter can be expanded with additional syntaxes, but expected that the
   </tr>
   </table>
   
+  <i> value, character or character value refers to both ASCII and UNICODE depending on the version if we talk about printing a string</i>
+  
   ## HowTo
   Compilation: <pre> <code> gcc VaginaFuck.cpp -o VaginaFuck </code> </pre>
-  Usage: <pre> <code> ./VaginaFuck-1.x filename.bf </code> </pre>
+  Usage: <pre> <code> ./VaginaFuck-x.x filename.bf </code> </pre>
   
-  You can download a binary executable file at the right, in the <b> Release </b>section.
+  You can download a two variant binary executable file (ASCII and UNICODE) at the right, in the <b> Release </b>section.
   
   ## About this Maintainer
   I, the maintainer of this interpreter forked from the source below is not a professional programmer, so I cannot address some of the complicated concepts or ideas of this project.
