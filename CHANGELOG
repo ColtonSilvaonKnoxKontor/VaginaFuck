@@ -1,0 +1,16 @@
+Version 1:
+1.0     - Initial Release
+        - Add '@' syntax, also known as Output File Stream in c++ with a fixed filename "out.vfto"
+
+1.1     - Add multiplication syntax '*', can multiply the value in cell up to 2
+
+1.2	    - Add commandline options
+        - Shows file size in bytes, -1B if the size is less than 1B (This feature will not work for UNICODE release)
+---------------------------------------------------------------------------------------
+Version 2:     
+2.0     - Supports wide variety of Unicode characters
+        - Adjust multiplication by 4 to map larger unicode values
+        - Adds division syntax '/' by 4 as alternative to subtraction and other purpose.
+
+2.1	    - Add commandline options
+        - Minor changes
