@@ -23,6 +23,18 @@ std::string inputFile(const std::string& filename)
     while (file.good()) {
         commands.push_back(file.get());
     }
+	
+    /*
+    bug error, only output ASCII char if I use this code with Unicode;
+    uncomment if you want to compile this just for ASCII code
+    
+    std::cout << "File interpreted!" << std::endl;
+    
+    long fin_size = file.tellg();
+    file.seekg(0,file.beg);
+    std::cout << "File Size: "<<fin_size<<"B\n";
+    std::cout << " " << std::endl;
+    */
 
     return commands;
 }
@@ -77,7 +89,9 @@ void interpretCode(const std::string& commands)
         }
         case '*':
         {
-	        (*dataPtr) *= 2;
+	        (*dataPtr) *= 4;
+		// (*dataPtr) *= 2;
+		// uncomment if you want the ASCII function
 	        break;
         }
         case '.':
@@ -110,7 +124,7 @@ void interpretCode(const std::string& commands)
                     else if (*instructionPtr == ']')
                     {
                         if (instructionStack.empty())
-                            throw std::runtime_error("Found a ']' that did not have a matching '['!");
+                            throw std::runtime_error("error at syntax ']': syntax '[' expected!");
 
                         auto tempInstructionPtr = instructionStack.top();
                         instructionStack.pop();
@@ -125,7 +139,7 @@ void interpretCode(const std::string& commands)
         case ']':
         {
             if (instructionStack.empty())
-                throw std::runtime_error("Found a ']' that did not have a matching '['!");
+                throw std::runtime_error("error at syntax ']': syntax '[' expected!");
 
             if (*dataPtr != 0)
                 instructionPtr = instructionStack.top();
@@ -142,7 +156,7 @@ void interpretCode(const std::string& commands)
     }
 
     if (!instructionStack.empty())
-        throw std::runtime_error("Found a '[' that did not have a matching ']'!");
+        throw std::runtime_error("error at syntax '[': syntax ']' expected!");
 }
 
 int main(int argc, char* argv[])
