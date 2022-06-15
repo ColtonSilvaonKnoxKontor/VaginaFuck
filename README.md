@@ -79,3 +79,5 @@ This interpreter can be expanded with additional syntaxes, but expected that the
   
   * Brainfuck for Dummies DOCX document "2019-10-23" | https://docs.google.com/document/d/1M51AYmDR1Q9UBsoTrGysvuzar2_Hx69Hz14tsQXWV6M/edit
   * https://github.com/texus/Brainfuck-interpreter for the unmodified c++ code
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5DAEDT) <i> Payment account is not available because of the slow process of National ID ; I'd just added here just in case </i>
