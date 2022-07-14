@@ -66,6 +66,8 @@ This interpreter can be expanded with additional syntaxes, but expected that the
   <i> value, character or character value refers to both ASCII and UNICODE depending on the version if we talk about printing a string</i>
   
   ## HowTo
+  <b>YOU MUST EDIT THE SOURCE FILE BEFORE COMPILATION </b>
+  
   Compilation: <pre> <code> g++ VaginaFuck.cpp -o VaginaFuck </code> </pre>
   Usage: <pre> <code> ./VaginaFuck-x.x filename.bf </code> </pre>
   
