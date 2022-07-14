@@ -99,9 +99,13 @@ void interpretCode(const std::string& commands)
             std::wcout << wchar_t(*dataPtr);
             break;
         }
-        case '@':
+        case '@':				
+	 /* Custom brainfuck command
+	    but cannot display the unicode char in output file because the fact that 
+	    filestream is not a member of std, so comment this case if you want to
+	    compile this for ASCII only purpose (You can fix this!)*/
         {
-            outfile << char(*dataPtr);
+            outfile << char(*dataPtr);  
             break;
         }
         case ',':
