@@ -76,6 +76,11 @@ This interpreter can be expanded with additional syntaxes, but expected that the
   ## About this Maintainer
   I, the maintainer of this interpreter forked from the source below is not a professional programmer, so I cannot address some of the complicated concepts or ideas of this project.
   
+  ## Git Mirror
+  This source code is also available in <b>Gitee</b>, a Github-like platform in Mainland China. It's documentation is translated in Simplified Chinese targeted for local chinese users.
+  
+  Look Here: https://gitee.com/ColtonSilvaonKnoxKontor/VaginaFuck
+  
   ## Credits
   All of the source code and other texts here are came from different sources, hence I will give the proper credits to the following:
   
