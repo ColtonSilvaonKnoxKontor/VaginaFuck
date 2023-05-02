@@ -1,3 +1,5 @@
+<meta name="google-site-verification" content="yFGI0XxqbIVhfJ34yGw8IeEbJW0Ll4__2_bJbA36xiU" />
+
 # VaginaFuck | An Enhanced Brainfuck Esoteric Programming Language
 VaginaFuck is an interpreter written in c++ consisting of 10 operations (as for now), adopting some of the features of c++, notably the fstream file handling that supports only write mode. This project’s goal is to add more syntaxes so that you can create a program with ease.
 
